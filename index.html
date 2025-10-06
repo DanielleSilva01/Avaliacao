@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Danielle Evangelista — Portfólio</title>
+  <link rel="stylesheet" href="Style/estilos.css"
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <h1 id="site-title">Danielle Evangelista</h1>
+      <nav role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <img src="img/imagem.jpg" alt="Foto de Danielle Evangelista" class="foto-perfil">
+        <div>
+          <h2 id="hero-title">Olá!</h2>
+          <p>Sou <strong>Danielle Evangelista da Silva</strong>, estudante de Sistemas de Informação na Newton Paiva e apaixonada por desenvolvimento web.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <h2 id="sobre-title">Sobre mim</h2>
+        <p>Formada em Redes de Computadores pelo CEFET-MG e atualmente cursando Sistemas de Informação. Tenho conhecimentos em desenvolvimento full-stack e infraestrutura de TI.</p>
+        <h3>Habilidades</h3>
+        <ul>
+          <li>Front-end: HTML, CSS, JavaScript, React</li>
+          <li>Back-end: Java, Node.js, SQL</li>
+          <li>Infraestrutura: Redes, banco de dados e servidores</li>
+        </ul>
+        <h3>Interesses</h3>
+        <p>Desenvolvimento Web e aplicações modernas</p>
+      </div>
+    </section>
+
+    <section id="projetos" aria-labelledby="projetos-title">
+      <div class="container grid-projetos">
+        <h2 id="projetos-title">Projetos</h2>
+
+        <article class="projeto">
+          <h3>Súdito das Plantas</h3>
+          <p>Projeto feito no CEFET-MG na disciplina de Programação Web.</p>
+          <a href="https://daniellesilva01.github.io/HTML-parte-1-trabalho/" target="_blank">Acessar projeto</a>
+        </article>
+
+        <article class="projeto">
+          <h3>Prime Flix</h3>
+          <p>Aplicação feita durante o curso de React + JS, consumindo API de filmes.</p>
+          <a href="https://dani-filmes.netlify.app/" target="_blank">Acessar projeto</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Contato</h2>
+
+        <form id="form-contato">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Seu melhor e-mail">
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required placeholder="Assunto da mensagem">
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem"></textarea>
+          </div>
+
+          <button type="submit" id="enviar">Enviar</button>
+          <p id="status-msg"></p>
+        </form>
+
+        <address>
+          <p>Ou entre em contato via:</p>
+          <ul>
+            <li>Email: <a href="mailto:danievan2005@gmail.com">danievan2005@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/DanielleSilva01" target="_blank">DanielleSilva01</a></li>
+          </ul>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; Danielle Evangelista. Todos os direitos reservados.</p>
+      <p><a href="#">Política de privacidade</a> | <a href="#">Termos de uso</a></p>
+    </div>
+  </footer>
+
+  <button id="btn-topo" title="Voltar ao topo">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="Script/script.js"></script>
+</body>
+</html>
